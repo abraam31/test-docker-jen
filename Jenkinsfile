@@ -3,8 +3,8 @@ def MavenBuild() {
         def maven_image = docker.image('busybox:latest')
         maven_image.pull()
         maven_image.inside{
-            echo "hello from inside container !" > hello 
-            sleep 60s
+            sh ''' echo "hello from inside container !" > hello '''
+            sh ''' sleep 60s '''
 			}
 }
 
