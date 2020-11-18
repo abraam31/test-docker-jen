@@ -15,7 +15,8 @@ stages {
         steps {
             script {
                 MavenBuild()
-            }
-        }
-    }
+				}
+			}
+		}
+	}
 }
