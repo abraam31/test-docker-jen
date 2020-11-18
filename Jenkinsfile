@@ -6,6 +6,7 @@ def MavenBuild() {
             echo "hello world !"
             sleep 60s
     }
+}
 
 pipeline {
 agent any
