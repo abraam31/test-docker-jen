@@ -48,7 +48,7 @@ pipeline {
 
 		stage('ELSE') {
 			when {
-				branch comparator: 'REGEXP', pattern: '^[^(?!master)(?!release)(?!dev)]*'
+				branch comparator: 'REGEXP', pattern: '^[(?!master)(?!release)(?!dev)]*'
 				beforeAgent true
 				}
 			environment {
