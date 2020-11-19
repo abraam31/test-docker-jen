@@ -3,7 +3,7 @@ def MavenBuild() {
         def maven_image = docker.image('busybox:latest')
         maven_image.pull()
         maven_image.inside('-v /tmp/checking_script:/home') {
-            sh ''' echo hello '''
+            sh ''' echo $MESSAGE '''
             sh ''' sleep 60s '''
 			}
 }
@@ -11,25 +11,38 @@ def MavenBuild() {
 pipeline {
 agent any
 stages {
-    stage('build') {
-        agent any
+    stage('DEV') {
+		when {
+			  branch comparator: 'REGEXP', pattern: 'dev/*'
+			  beforeAgent true
+			}
 		environment {
 				PROXY_CONF= '-Dhttp.proxyHost=isp-ceg.emea.cegedim.grp -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts=*.cegedim.clt -Dhttps.proxyHost=isp-ceg.emea.cegedim.grp -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=*.cegedim.clt'
+				MESSAGE= 'HELLO FROM DEV'
 			  }
 		steps {
 			script {
-
-				if("$GIT_BRANCH" =~ /dev*) {
-					echo "This is the dev branch"
-					}
-					
-				else {
-					echo "Fuckk off!"
-					}
-				MavenBuild()
+				MavenBuild($MESSAGE)
 				echo "$PROXY_CONF"
 				}
 			}
 		}
+		
+    stage('master') {
+		when {
+			  branch comparator: 'REGEXP', pattern: 'master/*'
+			  beforeAgent true
+			}
+		environment {
+				PROXY_CONF= '-Dhttp.proxyHost=isp-ceg.emea.cegedim.grp -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts=*.cegedim.clt -Dhttps.proxyHost=isp-ceg.emea.cegedim.grp -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=*.cegedim.clt'
+				MESSAGE= 'HELLO FROM PROD'
+			  }
+		steps {
+			script {
+				MavenBuild($MESSAGE)
+				echo "$PROXY_CONF"
+				}
+			}
+		}	
 	}
 }
