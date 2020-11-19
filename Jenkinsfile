@@ -23,11 +23,13 @@ pipeline {
 			environment {
 					PROXY_CONF= '-Dhttp.proxyHost=isp-ceg.emea.cegedim.grp -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts=*.cegedim.clt -Dhttps.proxyHost=isp-ceg.emea.cegedim.grp -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=*.cegedim.clt'
 					MESSAGE= 'HELLO FROM DEV'
+					command = "echo Hello From DEEEEEEEEEEEEEEEEEEV"
 				}
 			steps {
 				script {
 					MavenBuild(env.MESSAGE)
 					echo "$PROXY_CONF"
+					sh """ env.command """
 					}
 				}
 			}
@@ -40,11 +42,13 @@ pipeline {
 			environment {
 					PROXY_CONF= '-Dhttp.proxyHost=isp-ceg.emea.cegedim.grp -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts=*.cegedim.clt -Dhttps.proxyHost=isp-ceg.emea.cegedim.grp -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=*.cegedim.clt'
 					MESSAGE= 'HELLO FROM PROD'
+					command = "echo Hello From PROOOOOOOOOOOOOOOD"
 				}
 			steps {
 				script {
 					MavenBuild(env.MESSAGE)
 					echo "$PROXY_CONF"
+					sh """ env.command """
 					}
 				}
 			}	
@@ -58,11 +62,13 @@ pipeline {
 			environment {
 					PROXY_CONF= '-Dhttp.proxyHost=isp-ceg.emea.cegedim.grp -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts=*.cegedim.clt -Dhttps.proxyHost=isp-ceg.emea.cegedim.grp -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=*.cegedim.clt'
 					MESSAGE= 'HELLO FROM ELSEWHERE'
+					command = "echo Hello From ELSEWHEEEEEEEEEEERE"
 				}
 			steps {
 				script {
 					MavenBuild(env.MESSAGE)
 					echo "$PROXY_CONF"
+					sh """ env.command """
 					}
 				}
 			}	
