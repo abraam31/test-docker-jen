@@ -1,10 +1,11 @@
-def MavenBuild($MESSAGE) {
+def MavenBuild(MESSAGE, COMMAND) {
 // Doing the build first on the 
 	stage("Pulling docker") {
 		def maven_image = docker.image('busybox:latest')
 		maven_image.pull()
 		maven_image.inside('-v /tmp/checking_script:/home') {
-			sh ''' echo $MESSAGE '''
+			sh """ echo $MESSAGE """
+			sh """ echo $COMMAND """
 			sh ''' sleep 60s '''
 			}
 		}
@@ -27,7 +28,7 @@ pipeline {
 				}
 			steps {
 				script {
-					MavenBuild(env.MESSAGE)
+					MavenBuild(env.MESSAGE, env.command)
 					echo "$PROXY_CONF"
 					sh """ env.command """
 					}
@@ -46,7 +47,7 @@ pipeline {
 				}
 			steps {
 				script {
-					MavenBuild(env.MESSAGE)
+					MavenBuild(env.MESSAGE, env.command)
 					echo "$PROXY_CONF"
 					sh """ env.command """
 					}
@@ -66,7 +67,7 @@ pipeline {
 				}
 			steps {
 				script {
-					// MavenBuild(env.MESSAGE)
+					// MavenBuild(env.MESSAGE, env.command)
 					echo "$PROXY_CONF"
 					sh """ ${env.command} """
 					}
