@@ -48,9 +48,10 @@ pipeline {
 
 		stage('ELSE') {
 			when {
-				branch comparator: 'REGEXP', pattern: '^[(?!master)(?!release)(?!dev)]*'
-				beforeAgent true
-				}
+			  not {
+				branch comparator: 'REGEXP', pattern: '^[(master)(release)(dev)]*'
+			  }
+}
 			environment {
 					PROXY_CONF= '-Dhttp.proxyHost=isp-ceg.emea.cegedim.grp -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts=*.cegedim.clt -Dhttps.proxyHost=isp-ceg.emea.cegedim.grp -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=*.cegedim.clt'
 					MESSAGE= 'HELLO FROM ELSEWHERE'
