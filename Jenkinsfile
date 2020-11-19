@@ -10,36 +10,16 @@ maven_image.inside('-v /tmp/checking_script:/home') {
 
 pipeline {
 	agent any
-	environment {
-			PROXY_CONF= '-Dhttp.proxyHost=isp-ceg.emea.cegedim.grp -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts=*.cegedim.clt -Dhttps.proxyHost=isp-ceg.emea.cegedim.grp -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=*.cegedim.clt'
-			MESSAGE= 'HELLO FROM DEV'
-		}
 	stages {
-
-		stage('CONDITIONED STEPS') {
-
-			steps {
-				when {
-					branch comparator: 'REGEXP', pattern: '^[(?!dev)]*'
-					beforeAgent true
-				}
-				script {
-					echo "HELLO FROM DEV"
-					}
-				when {
-					branch comparator: 'REGEXP', pattern: '^[(?!dev)]*'
-					beforeAgent true
-				}
-				script {
-					echo "HELLO FROM DEV"
-					}
-				}
-			}		
-
+	
 		stage('DEV') {
 			when {
-				branch comparator: 'REGEXP', pattern: '^[(?!dev)]*'
+				branch comparator: 'REGEXP', pattern: '^[(dev)]*'
 				beforeAgent true
+				}
+			environment {
+					PROXY_CONF= '-Dhttp.proxyHost=isp-ceg.emea.cegedim.grp -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts=*.cegedim.clt -Dhttps.proxyHost=isp-ceg.emea.cegedim.grp -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=*.cegedim.clt'
+					MESSAGE= 'HELLO FROM DEV'
 				}
 			steps {
 				script {
@@ -51,12 +31,29 @@ pipeline {
 			
 		stage('master') {
 			when {
-				branch comparator: 'REGEXP', pattern: '^[^(?!master)(?!release)]*'
+				branch comparator: 'REGEXP', pattern: '^[(master)(release)]*'
 				beforeAgent true
 				}
 			environment {
 					PROXY_CONF= '-Dhttp.proxyHost=isp-ceg.emea.cegedim.grp -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts=*.cegedim.clt -Dhttps.proxyHost=isp-ceg.emea.cegedim.grp -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=*.cegedim.clt'
 					MESSAGE= 'HELLO FROM PROD'
+				}
+			steps {
+				script {
+					MavenBuild(env.MESSAGE)
+					echo "$PROXY_CONF"
+					}
+				}
+			}	
+
+		stage('ELSE') {
+			when {
+				branch comparator: 'REGEXP', pattern: '^[^(?!master)(?!release)(?!dev)]*'
+				beforeAgent true
+				}
+			environment {
+					PROXY_CONF= '-Dhttp.proxyHost=isp-ceg.emea.cegedim.grp -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts=*.cegedim.clt -Dhttps.proxyHost=isp-ceg.emea.cegedim.grp -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=*.cegedim.clt'
+					MESSAGE= 'HELLO FROM ELSEWHERE'
 				}
 			steps {
 				script {
