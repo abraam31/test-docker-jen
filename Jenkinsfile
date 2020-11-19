@@ -13,7 +13,7 @@ agent any
 stages {
     stage('DEV') {
 		when {
-			  branch comparator: 'REGEXP', pattern: 'dev/*'
+			  branch comparator: 'REGEXP', pattern: '*/dev'
 			  beforeAgent true
 			}
 		environment {
@@ -30,7 +30,7 @@ stages {
 		
     stage('master') {
 		when {
-			  branch comparator: 'REGEXP', pattern: 'master/*'
+			  branch comparator: 'REGEXP', pattern: '*/master'
 			  beforeAgent true
 			}
 		environment {
