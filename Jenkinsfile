@@ -1,5 +1,17 @@
 def MavenBuild($MESSAGE) {
 // Doing the build first on the 
+	stage("Pulling docker") {
+		def maven_image = docker.image('busybox:latest')
+		maven_image.pull()
+		maven_image.inside('-v /tmp/checking_script:/home') {
+			sh ''' echo $MESSAGE '''
+			sh ''' sleep 60s '''
+			}
+		}
+}
+
+def MavenBuild($MESSAGE) {
+// Doing the build first on the 
 def maven_image = docker.image('busybox:latest')
 maven_image.pull()
 maven_image.inside('-v /tmp/checking_script:/home') {
@@ -7,7 +19,6 @@ maven_image.inside('-v /tmp/checking_script:/home') {
 	sh ''' sleep 60s '''
 	}
 }
-
 pipeline {
 	agent any
 	stages {
