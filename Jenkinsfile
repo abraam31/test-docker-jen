@@ -66,9 +66,9 @@ pipeline {
 				}
 			steps {
 				script {
-					MavenBuild(env.MESSAGE)
+					// MavenBuild(env.MESSAGE)
 					echo "$PROXY_CONF"
-					sh """ env.command """
+					sh """ ${env.command} """
 					}
 				}
 			}	
