@@ -19,7 +19,7 @@ stages {
 			
     stage('DEV') {
 		when {
-			  $GIT_BRANCH comparator: 'REGEXP', pattern: '^[a-z].*(dev)'
+			  branch comparator: 'REGEXP', pattern: 'dev*'
 			  beforeAgent true
 			}
 		environment {
@@ -36,7 +36,7 @@ stages {
 		
     stage('master') {
 		when {
-			  $GIT_BRANCH comparator: 'REGEXP', pattern: '^[a-z].*(master)'
+			  branch comparator: 'REGEXP', pattern: 'master*'
 			  beforeAgent true
 			}
 		environment {
