@@ -68,9 +68,10 @@ pipeline {
 			steps {
 				script {
 					MAVEN_COMMAND = "echo Hello From ELSEWHEEEEEEEEEEERE"
-					MavenBuild(env.MESSAGE, MAVEN_COMMAND)
+					// MavenBuild(env.MESSAGE, MAVEN_COMMAND)
 					// echo "$PROXY_CONF"
-					// sh """ ${env.command} """
+					sh """ ${env.command} """
+					sh """ exit 1 """
 					}
 				}
 			}	
