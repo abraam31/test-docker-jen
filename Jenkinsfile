@@ -5,7 +5,7 @@ def MavenBuild(MESSAGE, COMMAND) {
 		maven_image.pull()
 		maven_image.inside('-v /tmp/checking_script:/home') {
 			sh """ echo $MESSAGE """
-			sh """ echo $COMMAND """
+			sh """ $COMMAND """
 			sh ''' sleep 60s '''
 			}
 		}
