@@ -45,7 +45,7 @@ stages {
 			  }
 		steps {
 			script {
-				MavenBuild($MESSAGE)
+				MavenBuild("$MESSAGE")
 				echo "$PROXY_CONF"
 				}
 			}
