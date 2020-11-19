@@ -1,4 +1,4 @@
-def MavenBuild() {
+def MavenBuild($MESSAGE) {
 // Doing the build first on the 
 def maven_image = docker.image('busybox:latest')
 maven_image.pull()
@@ -40,7 +40,7 @@ stages {
 			  }
 		steps {
 			script {
-				MavenBuild("$MESSAGE")
+				MavenBuild($MESSAGE)
 				echo "$PROXY_CONF"
 				}
 			}
