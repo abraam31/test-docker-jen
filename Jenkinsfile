@@ -31,7 +31,7 @@ stages {
 		
     stage('master') {
 		when {
-			  branch comparator: 'REGEXP', pattern: 'master*'
+			  branch comparator: 'REGEXP', pattern: '^[(master)(release)]*'
 			  beforeAgent true
 			}
 		environment {
