@@ -18,6 +18,12 @@ stages {
 			  }
 		steps {
 			script {
+				if(GIT_BRANCH =~ /dev(.*) {
+					echo "This is the dev branch"
+					}
+				else {
+					echo "Fuckk off!"
+					}
 				MavenBuild()
 				echo "$PROXY_CONF"
 				}
