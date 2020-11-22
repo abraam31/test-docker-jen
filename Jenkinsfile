@@ -19,7 +19,7 @@ pipeline {
 			parallel {	
 				stage('DEV') {
 					when {
-						branch comparator: 'REGEXP', pattern: '^[(dev)]*'
+						branch comparator: 'REGEXP', pattern: '^[(dev)(bullshit)]*'
 						beforeAgent true
 						}
 					environment {
