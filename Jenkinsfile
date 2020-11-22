@@ -15,65 +15,68 @@ def MavenBuild(MESSAGE, COMMAND) {
 pipeline {
 	agent any
 	stages {
-	
-		stage('DEV') {
-			when {
-				branch comparator: 'REGEXP', pattern: '^[(dev)]*'
-				beforeAgent true
-				}
-			environment {
-					PROXY_CONF= '-Dhttp.proxyHost=isp-ceg.emea.cegedim.grp -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts=*.cegedim.clt -Dhttps.proxyHost=isp-ceg.emea.cegedim.grp -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=*.cegedim.clt'
-					MESSAGE= 'HELLO FROM DEV'
-					command = "echo Hello From DEEEEEEEEEEEEEEEEEEV"
-				}
-			steps {
-				script {
-					MavenBuild(env.MESSAGE, env.command)
-					echo "$PROXY_CONF"
-					sh """ env.command """
+		stage('Verifying branch name') {
+			parallel {	
+				stage('DEV') {
+					when {
+						branch comparator: 'REGEXP', pattern: '^[(dev)]*'
+						beforeAgent true
+						}
+					environment {
+							PROXY_CONF= '-Dhttp.proxyHost=isp-ceg.emea.cegedim.grp -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts=*.cegedim.clt -Dhttps.proxyHost=isp-ceg.emea.cegedim.grp -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=*.cegedim.clt'
+							MESSAGE= 'HELLO FROM DEV'
+							command = "echo Hello From DEEEEEEEEEEEEEEEEEEV"
+						}
+					steps {
+						script {
+							MavenBuild(env.MESSAGE, env.command)
+							echo "$PROXY_CONF"
+							sh """ env.command """
+							}
+						}
 					}
-				}
-			}
-			
-		stage('master') {
-			when {
-				branch comparator: 'REGEXP', pattern: '^[(master)(release)]*'
-				beforeAgent true
-				}
-			environment {
-					PROXY_CONF= '-Dhttp.proxyHost=isp-ceg.emea.cegedim.grp -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts=*.cegedim.clt -Dhttps.proxyHost=isp-ceg.emea.cegedim.grp -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=*.cegedim.clt'
-					MESSAGE= 'HELLO FROM PROD'
-					command = "echo Hello From PROOOOOOOOOOOOOOOD"
-				}
-			steps {
-				script {
-					MavenBuild(env.MESSAGE, env.command)
-					echo "$PROXY_CONF"
-					sh """ env.command """
-					}
-				}
-			}	
+					
+				stage('master') {
+					when {
+						branch comparator: 'REGEXP', pattern: '^[(master)(release)]*'
+						beforeAgent true
+						}
+					environment {
+							PROXY_CONF= '-Dhttp.proxyHost=isp-ceg.emea.cegedim.grp -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts=*.cegedim.clt -Dhttps.proxyHost=isp-ceg.emea.cegedim.grp -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=*.cegedim.clt'
+							MESSAGE= 'HELLO FROM PROD'
+							command = "echo Hello From PROOOOOOOOOOOOOOOD"
+						}
+					steps {
+						script {
+							MavenBuild(env.MESSAGE, env.command)
+							echo "$PROXY_CONF"
+							sh """ env.command """
+							}
+						}
+					}	
 
-		stage('ELSE') {
-			when {
-			  not {
-				branch comparator: 'REGEXP', pattern: '^[(master)(release)(dev)]*'
-			  }
-}
-			environment {
-					PROXY_CONF= '-Dhttp.proxyHost=isp-ceg.emea.cegedim.grp -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts=*.cegedim.clt -Dhttps.proxyHost=isp-ceg.emea.cegedim.grp -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=*.cegedim.clt'
-					MESSAGE= 'HELLO FROM ELSEWHERE'
-					command = "echo Hello From ELSEWHEEEEEEEEEEERE"
-				}
-			steps {
-				script {
-					MAVEN_COMMAND = "echo Hello From ELSEWHEEEEEEEEEEERE"
-					// MavenBuild(env.MESSAGE, MAVEN_COMMAND)
-					// echo "$PROXY_CONF"
-					sh """ ${env.command} """
-					sh """ exit 1 """
+				stage('ELSE') {
+					when {
+					  not {
+						branch comparator: 'REGEXP', pattern: '^[(master)(release)(dev)]*'
+					  }
+		}
+					environment {
+							PROXY_CONF= '-Dhttp.proxyHost=isp-ceg.emea.cegedim.grp -Dhttp.proxyPort=3128 -Dhttp.nonProxyHosts=*.cegedim.clt -Dhttps.proxyHost=isp-ceg.emea.cegedim.grp -Dhttps.proxyPort=3128 -Dhttps.nonProxyHosts=*.cegedim.clt'
+							MESSAGE= 'HELLO FROM ELSEWHERE'
+							command = "echo Hello From ELSEWHEEEEEEEEEEERE"
+						}
+					steps {
+						script {
+							MAVEN_COMMAND = "echo Hello From ELSEWHEEEEEEEEEEERE"
+							// MavenBuild(env.MESSAGE, MAVEN_COMMAND)
+							// echo "$PROXY_CONF"
+							sh """ ${env.command} """
+							sh """ exit 1 """
+							}
+						}
 					}
-				}
-			}	
+			}
+		}
 	}
 }
