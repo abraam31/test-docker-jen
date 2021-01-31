@@ -1,0 +1,1721 @@
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: '192.168.1.91:9090'. You may need to add '192.168.1.91' to ALLOWED_HOSTS.
+Bad Request: /admin/
+[27/Nov/2019 06:59:18] "GET /admin/ HTTP/1.1" 400 68499
+Invalid HTTP_HOST header: '192.168.1.91:9090'. You may need to add '192.168.1.91' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[27/Nov/2019 06:59:18] "GET /favicon.ico HTTP/1.1" 400 68520
+/home/ip-d/Documents/trial_rest/myproject/myproject/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 06:59:04
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[27/Nov/2019 06:59:40] "GET /admin/ HTTP/1.1" 302 0
+[27/Nov/2019 06:59:40] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[27/Nov/2019 06:59:40] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+[27/Nov/2019 06:59:40] "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+[27/Nov/2019 06:59:40] "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+[27/Nov/2019 06:59:40] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[27/Nov/2019 06:59:40] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[27/Nov/2019 06:59:40] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+Not Found: /favicon.ico
+[27/Nov/2019 06:59:40] "GET /favicon.ico HTTP/1.1" 404 2707
+[27/Nov/2019 06:59:51] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1984
+[27/Nov/2019 06:59:51] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[27/Nov/2019 07:00:12] "GET /login HTTP/1.1" 301 0
+Method Not Allowed: /login/
+[27/Nov/2019 07:00:12] "GET /login/ HTTP/1.1" 405 5715
+[27/Nov/2019 07:00:12] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[27/Nov/2019 07:00:12] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+[27/Nov/2019 07:00:12] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[27/Nov/2019 07:00:12] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+[27/Nov/2019 07:00:12] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+[27/Nov/2019 07:00:12] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+[27/Nov/2019 07:00:12] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+[27/Nov/2019 07:00:12] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+[27/Nov/2019 07:00:12] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[27/Nov/2019 07:00:12] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+[27/Nov/2019 07:00:12] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 06:59:37
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /categoryinfo/
+Traceback (most recent call last):
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/renderers.py", line 104, in render
+    allow_nan=not self.strict, separators=separators
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+  File "/usr/lib/python3.5/json/__init__.py", line 237, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.5/json/encoder.py", line 198, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.5/json/encoder.py", line 256, in iterencode
+    return _iterencode(o, 0)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/utils/encoders.py", line 66, in default
+    return tuple(item for item in obj)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/utils/encoders.py", line 66, in <genexpr>
+    return tuple(item for item in obj)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/files/base.py", line 78, in __iter__
+    for chunk in self.chunks():
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/files/base.py", line 55, in chunks
+    self.seek(0)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/files/utils.py", line 20, in <lambda>
+    seek = property(lambda self: self.file.seek)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/fields/files.py", line 41, in _get_file
+    self._require_file()
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/fields/files.py", line 38, in _require_file
+    raise ValueError("The '%s' attribute has no file associated with it." % self.field.name)
+ValueError: The 'image' attribute has no file associated with it.
+[27/Nov/2019 07:11:59] "GET /categoryinfo/ HTTP/1.1" 500 127039
+Watching for file changes with StatReloader
+Method Not Allowed: /login/
+[27/Nov/2019 08:38:48] "GET /login/ HTTP/1.1" 405 5715
+[27/Nov/2019 08:38:48] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[27/Nov/2019 08:38:48] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+[27/Nov/2019 08:38:48] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+[27/Nov/2019 08:38:48] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+[27/Nov/2019 08:38:48] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+[27/Nov/2019 08:38:48] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+[27/Nov/2019 08:38:48] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+[27/Nov/2019 08:38:48] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[27/Nov/2019 08:38:48] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+[27/Nov/2019 08:38:48] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[27/Nov/2019 08:38:48] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+[27/Nov/2019 08:38:49] "GET /favicon.ico HTTP/1.1" 404 2707
+Method Not Allowed: /register/
+[27/Nov/2019 08:38:58] "GET /register/ HTTP/1.1" 405 5745
+Method Not Allowed: /login/
+[27/Nov/2019 08:39:23] "GET /login/ HTTP/1.1" 405 5715
+Not Found: /category/
+[27/Nov/2019 08:39:38] "GET /category/ HTTP/1.1" 404 2701
+[27/Nov/2019 08:39:43] "GET /categoryinfo/ HTTP/1.1" 200 7527
+[27/Nov/2019 08:40:07] "GET /categoryinfo/ HTTP/1.1" 200 7527
+[27/Nov/2019 08:40:07] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+[27/Nov/2019 08:40:07] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[27/Nov/2019 08:40:07] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[27/Nov/2019 08:40:07] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+[27/Nov/2019 08:40:07] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+[27/Nov/2019 08:40:07] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+[27/Nov/2019 08:40:07] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+[27/Nov/2019 08:40:07] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+[27/Nov/2019 08:40:07] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[27/Nov/2019 08:40:07] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+[27/Nov/2019 08:40:07] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+[27/Nov/2019 08:40:08] "GET /favicon.ico HTTP/1.1" 404 2707
+Method Not Allowed: /login/
+[27/Nov/2019 08:45:21] "GET /login/ HTTP/1.1" 405 5715
+Method Not Allowed: /register/
+[27/Nov/2019 08:45:25] "GET /register/ HTTP/1.1" 405 5745
+/home/ip-d/Documents/trial_rest/myproject/myapp/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 08:38:32
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 09:42:07
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 09:52:38
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 10:03:02
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 10:59:01
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 11:02:36
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 11:27:58
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 11:28:49
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 11:51:49
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 399, in check
+    for pattern in self.url_patterns:
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 584, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 577, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/ip-d/Documents/trial_rest/myproject/myproject/urls.py", line 4, in <module>
+    from myapp.views import *
+  File "/home/ip-d/Documents/trial_rest/myproject/myapp/views.py", line 174
+    def delete(self,request):
+    ^
+IndentationError: expected an indented block
+
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 399, in check
+    for pattern in self.url_patterns:
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 584, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/urls/resolvers.py", line 577, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/ip-d/Documents/trial_rest/myproject/myproject/urls.py", line 4, in <module>
+    from myapp.views import *
+  File "/home/ip-d/Documents/trial_rest/myproject/myapp/views.py", line 168
+    if
+      ^
+SyntaxError: invalid syntax
+
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myproject/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 13:37:54
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /qa_info/
+Traceback (most recent call last):
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/myproject/myapp/views.py", line 213, in get
+    return Response({'code': 400, 'message': 'No data found.','data':data })
+UnboundLocalError: local variable 'data' referenced before assignment
+[27/Nov/2019 13:47:35] "GET /qa_info/ HTTP/1.1" 500 97449
+Not Found: /favicon.ico
+[27/Nov/2019 13:47:36] "GET /favicon.ico HTTP/1.1" 404 2831
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 13:40:43
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 13:48:11
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[27/Nov/2019 13:48:22] "GET /qa_info/ HTTP/1.1" 200 9836
+[27/Nov/2019 13:48:22] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[27/Nov/2019 13:48:22] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[27/Nov/2019 13:48:22] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[27/Nov/2019 13:48:22] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[27/Nov/2019 13:48:22] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[27/Nov/2019 13:48:22] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[27/Nov/2019 13:48:22] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[27/Nov/2019 13:48:22] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 304 0
+[27/Nov/2019 13:48:22] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[27/Nov/2019 13:48:22] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[27/Nov/2019 13:48:22] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 13:48:16
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 13:49:56
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 13:50:55
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/utils/autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/management/__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/apps/config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/ip-d/Documents/trial_rest/myproject/myapp/models.py", line 28, in <module>
+    class Answer(models.Model):
+  File "/home/ip-d/Documents/trial_rest/myproject/myapp/models.py", line 29, in Answer
+    question_id = models.ForeignKey(Question,on_delete=models.CASCADE)
+NameError: name 'Question' is not defined
+
+/home/ip-d/Documents/trial_rest/myproject/myapp/models.py changed, reloading.
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 13:51:21
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 13:51:44
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 27, 2019 - 13:51:59
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9999/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[27/Nov/2019 13:52:44] "GET /qa_info/ HTTP/1.1" 200 9836
+[27/Nov/2019 13:52:49] "GET /categoryinfo/ HTTP/1.1" 200 10329
+Method Not Allowed: /login/
+[27/Nov/2019 13:52:58] "GET /login/ HTTP/1.1" 405 5715
+Method Not Allowed: /login/
+[27/Nov/2019 13:53:03] "GET /login/ HTTP/1.1" 405 5715
+Method Not Allowed: /register/
+[27/Nov/2019 13:53:05] "GET /register/ HTTP/1.1" 405 5745
+Watching for file changes with StatReloader
+Method Not Allowed: /login/
+[02/Dec/2019 13:40:49] "GET /login/ HTTP/1.1" 405 5733
+Method Not Allowed: /login/
+[02/Dec/2019 14:01:09] "GET /login/ HTTP/1.1" 405 5733
+[02/Dec/2019 14:01:34] "POST /login/ HTTP/1.1" 200 56
+[02/Dec/2019 14:02:20] "POST /login/ HTTP/1.1" 200 56
+[02/Dec/2019 14:05:35] "POST /login/ HTTP/1.1" 200 56
+[02/Dec/2019 14:05:52] "POST /register/ HTTP/1.1" 200 56
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/backends/sqlite3/base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: auth_user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/myproject/myapp/views.py", line 71, in post
+    user = User.objects.create(username = username)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/contrib/auth/base_user.py", line 66, in save
+    super().save(*args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1335, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/backends/sqlite3/base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: auth_user.username
+[02/Dec/2019 14:11:25] "POST /register/ HTTP/1.1" 500 21382
+Method Not Allowed: /login/
+[03/Dec/2019 04:17:25] "GET /login/ HTTP/1.1" 405 5733
+[03/Dec/2019 04:17:26] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[03/Dec/2019 04:17:26] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[03/Dec/2019 04:17:26] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[03/Dec/2019 04:17:26] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[03/Dec/2019 04:17:26] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[03/Dec/2019 04:17:26] "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[03/Dec/2019 04:17:26] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[03/Dec/2019 04:17:26] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[03/Dec/2019 04:17:26] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+[03/Dec/2019 04:17:26] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[03/Dec/2019 04:17:26] "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[03/Dec/2019 04:17:26] "GET /favicon.ico HTTP/1.1" 404 2959
+Method Not Allowed: /login/
+[03/Dec/2019 04:44:40] "GET /login/ HTTP/1.1" 405 5733
+[03/Dec/2019 04:44:40] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+[03/Dec/2019 04:44:40] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+[03/Dec/2019 04:44:40] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+[03/Dec/2019 04:44:40] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[03/Dec/2019 04:44:40] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+[03/Dec/2019 04:44:40] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[03/Dec/2019 04:44:40] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+[03/Dec/2019 04:44:40] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+[03/Dec/2019 04:44:40] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[03/Dec/2019 04:44:40] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+[03/Dec/2019 04:44:40] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+[03/Dec/2019 04:44:41] "GET /favicon.ico HTTP/1.1" 404 2959
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 03, 2019 - 08:34:40
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 03, 2019 - 09:37:56
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 03, 2019 - 09:38:47
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 03, 2019 - 09:42:13
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/backends/sqlite3/base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: auth_user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/myproject/myapp/views.py", line 72, in post
+    user = User.objects.create(username = username)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/contrib/auth/base_user.py", line 66, in save
+    super().save(*args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1335, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/db/backends/sqlite3/base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: auth_user.username
+[03/Dec/2019 09:48:41] "POST /register/ HTTP/1.1" 500 21539
+Watching for file changes with StatReloader
+[04/Dec/2019 14:01:07] "POST /login/ HTTP/1.1" 200 165
+Internal Server Error: /category_info/
+Traceback (most recent call last):
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/myproject/myapp/views.py", line 143, in get
+    elif person_id:
+NameError: name 'person_id' is not defined
+[04/Dec/2019 14:01:07] "GET /category_info/?category_id=&&role=undefined&&person_id=undefined HTTP/1.1" 500 17867
+Internal Server Error: /category_info/
+Traceback (most recent call last):
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/myproject/myapp/views.py", line 143, in get
+    elif person_id:
+NameError: name 'person_id' is not defined
+[04/Dec/2019 14:01:49] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 500 17813
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 04, 2019 - 13:58:18
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[04/Dec/2019 14:02:52] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:02:57] "GET /qa_info/?category_id=&&role=user&&person_id=9 HTTP/1.1" 200 158
+[04/Dec/2019 14:03:02] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:03:07] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:03:11] "GET /qa_info/?category_id=&&role=user&&person_id=9 HTTP/1.1" 200 158
+[04/Dec/2019 14:03:13] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:03:19] "OPTIONS /category_info/ HTTP/1.1" 200 0
+Internal Server Error: /category_info/
+Traceback (most recent call last):
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/myproject/myapp/views.py", line 219, in put
+    category_to_update = Category.objects.filter(id = int(category_id)).first()
+ValueError: invalid literal for int() with base 10: 'undefined'
+[04/Dec/2019 14:03:19] "PUT /category_info/ HTTP/1.1" 500 18066
+[04/Dec/2019 14:03:39] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:03:59] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:04:00] "GET /qa_info/?category_id=&&role=user&&person_id=9 HTTP/1.1" 200 158
+[04/Dec/2019 14:04:02] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:04:08] "PUT /category_info/ HTTP/1.1" 200 54
+Internal Server Error: /category_info/
+Traceback (most recent call last):
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ip-d/Documents/trial_rest/env/lib/python3.5/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ip-d/Documents/trial_rest/myproject/myapp/views.py", line 144, in get
+    existing_all_categoires = Category.objects.filter(creator_id = int(login_user_id), creator__role = str(role))
+ValueError: invalid literal for int() with base 10: 'undefined'
+[04/Dec/2019 14:04:08] "GET /category_info/?category_id=&&role=user&&person_id=undefined HTTP/1.1" 500 17989
+[04/Dec/2019 14:04:52] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:04:57] "PUT /category_info/ HTTP/1.1" 200 54
+[04/Dec/2019 14:04:57] "GET /category_info/?category_id=&&role=user&&person_id=9 HTTP/1.1" 200 43
+[04/Dec/2019 14:05:56] "PUT /category_info/ HTTP/1.1" 200 54
+[04/Dec/2019 14:05:58] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:06:06] "PUT /category_info/ HTTP/1.1" 200 54
+[04/Dec/2019 14:06:06] "GET /category_info/?category_id=&&role=user&&person_id=9 HTTP/1.1" 200 43
+[04/Dec/2019 14:06:34] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:08:50] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:09:21] "PUT /category_info/ HTTP/1.1" 200 54
+[04/Dec/2019 14:09:21] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:09:25] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:09:28] "GET /qa_info/?category_id=&&role=user&&person_id=9 HTTP/1.1" 200 158
+[04/Dec/2019 14:09:30] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:09:48] "PUT /category_info/ HTTP/1.1" 200 54
+[04/Dec/2019 14:09:48] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:10:29] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:10:30] "OPTIONS /category_info/?category_id= HTTP/1.1" 200 0
+[04/Dec/2019 14:10:30] "DELETE /category_info/?category_id= HTTP/1.1" 200 47
+[04/Dec/2019 14:10:49] "PUT /category_info/ HTTP/1.1" 200 54
+[04/Dec/2019 14:10:50] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:11:13] "OPTIONS /category_info/?category_id=6 HTTP/1.1" 200 0
+[04/Dec/2019 14:11:13] "DELETE /category_info/?category_id=6 HTTP/1.1" 200 47
+[04/Dec/2019 14:12:35] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:12:45] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 04, 2019 - 14:02:32
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[04/Dec/2019 14:13:42] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:13:45] "OPTIONS /category_info/ HTTP/1.1" 200 0
+[04/Dec/2019 14:13:45] "DELETE /category_info/ HTTP/1.1" 200 47
+[04/Dec/2019 14:14:39] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:14:40] "DELETE /category_info/ HTTP/1.1" 200 47
+[04/Dec/2019 14:14:41] "DELETE /category_info/ HTTP/1.1" 200 47
+[04/Dec/2019 14:14:53] "PUT /category_info/ HTTP/1.1" 200 54
+[04/Dec/2019 14:14:53] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:14:59] "DELETE /category_info/ HTTP/1.1" 200 47
+[04/Dec/2019 14:15:41] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:15:43] "DELETE /category_info/ HTTP/1.1" 200 47
+[04/Dec/2019 14:16:11] "GET /admin/ HTTP/1.1" 200 9137
+[04/Dec/2019 14:16:11] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[04/Dec/2019 14:16:11] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[04/Dec/2019 14:16:11] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[04/Dec/2019 14:16:12] "GET /admin/ HTTP/1.1" 200 9137
+[04/Dec/2019 14:16:12] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[04/Dec/2019 14:16:12] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[04/Dec/2019 14:16:12] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[04/Dec/2019 14:16:12] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[04/Dec/2019 14:16:12] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[04/Dec/2019 14:16:12] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[04/Dec/2019 14:16:12] "GET /favicon.ico HTTP/1.1" 404 3099
+[04/Dec/2019 14:16:15] "GET /admin/auth/user/ HTTP/1.1" 200 10048
+[04/Dec/2019 14:16:15] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[04/Dec/2019 14:16:15] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[04/Dec/2019 14:16:15] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[04/Dec/2019 14:16:15] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[04/Dec/2019 14:16:15] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[04/Dec/2019 14:16:15] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[04/Dec/2019 14:16:15] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[04/Dec/2019 14:16:15] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[04/Dec/2019 14:16:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[04/Dec/2019 14:16:15] "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+[04/Dec/2019 14:16:15] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[04/Dec/2019 14:16:15] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 271817
+[04/Dec/2019 14:16:15] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[04/Dec/2019 14:16:15] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+[04/Dec/2019 14:16:15] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[04/Dec/2019 14:16:25] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:16:26] "DELETE /category_info/ HTTP/1.1" 200 47
+[04/Dec/2019 14:16:46] "POST /login/ HTTP/1.1" 200 165
+[04/Dec/2019 14:16:46] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+[04/Dec/2019 14:16:55] "DELETE /category_info/ HTTP/1.1" 200 47
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 04, 2019 - 14:13:31
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[04/Dec/2019 14:17:56] "OPTIONS /category_info/ HTTP/1.1" 200 0
+[04/Dec/2019 14:17:56] "PUT /category_info/ HTTP/1.1" 200 54
+[04/Dec/2019 14:17:56] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 405
+Watching for file changes with StatReloader
+/home/ip-d/Documents/trial_rest/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 04, 2019 - 14:29:46
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[05/Dec/2019 08:45:14] "POST /login/ HTTP/1.1" 200 165
+[05/Dec/2019 08:45:14] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 353
+[05/Dec/2019 08:45:19] "GET /qa_info/?category_id=&&role=undefined&&person_id=undefined HTTP/1.1" 200 158
+[05/Dec/2019 08:45:23] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 353
+[05/Dec/2019 08:45:28] "OPTIONS /category_info/ HTTP/1.1" 200 0
+[05/Dec/2019 08:45:29] "PUT /category_info/ HTTP/1.1" 200 54
+[05/Dec/2019 08:45:29] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 365
+[05/Dec/2019 08:45:37] "DELETE /category_info/ HTTP/1.1" 200 47
+Watching for file changes with StatReloader
+[06/Dec/2019 12:15:02] "GET /category_info/?category_id=&&role=&&person_id= HTTP/1.1" 200 255
+[12/Dec/2019 13:46:56] "GET / HTTP/1.1" 200 5200
+[12/Dec/2019 13:46:57] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 77
+[12/Dec/2019 13:46:57] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 77
+[12/Dec/2019 13:46:57] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 77
+[12/Dec/2019 13:46:57] "GET /static/rest_framework/css/default.css HTTP/1.1" 404 77
+[12/Dec/2019 13:46:57] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 404 77
+[12/Dec/2019 13:46:57] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 77
+[12/Dec/2019 13:46:57] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 77
+[12/Dec/2019 13:46:57] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 77
+[12/Dec/2019 13:46:57] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 77
+[12/Dec/2019 13:46:57] "GET /static/rest_framework/js/default.js HTTP/1.1" 404 77
+[12/Dec/2019 13:46:58] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 77
+[12/Dec/2019 13:46:58] "GET /static/rest_framework/js/default.js HTTP/1.1" 404 77
+[12/Dec/2019 13:46:59] "GET /favicon.ico HTTP/1.1" 404 77
+[12/Dec/2019 13:49:04] "GET / HTTP/1.1" 200 5200
+[12/Dec/2019 13:49:07] "GET / HTTP/1.1" 200 5200
+[12/Dec/2019 13:49:08] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 77
+[12/Dec/2019 13:49:08] "GET /static/rest_framework/css/default.css HTTP/1.1" 404 77
+[12/Dec/2019 13:49:08] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 77
+[12/Dec/2019 13:49:08] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 77
+[12/Dec/2019 13:49:09] "GET / HTTP/1.1" 200 5200
+[12/Dec/2019 13:49:09] "GET /static/rest_framework/css/default.css HTTP/1.1" 404 77
+[12/Dec/2019 13:49:09] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 77
+[12/Dec/2019 13:49:09] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 77
+[12/Dec/2019 13:49:09] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 77
+[12/Dec/2019 13:49:10] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 77
+[12/Dec/2019 13:49:10] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 77
+[12/Dec/2019 13:49:10] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 77
+[12/Dec/2019 13:49:10] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 404 77
+[12/Dec/2019 13:49:10] "GET /static/rest_framework/js/default.js HTTP/1.1" 404 77
+[12/Dec/2019 13:49:10] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 77
+[12/Dec/2019 13:49:15] "GET /favicon.ico HTTP/1.1" 404 77
+[12/Dec/2019 13:49:15] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 77
+[12/Dec/2019 13:49:15] "GET /apple-touch-icon.png HTTP/1.1" 404 77
+[12/Dec/2019 13:49:15] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 77
+[12/Dec/2019 13:49:15] "GET /favicon.ico HTTP/1.1" 404 77
+[12/Dec/2019 13:49:15] "GET /apple-touch-icon.png HTTP/1.1" 404 77
+[12/Dec/2019 13:49:32] "GET / HTTP/1.1" 200 24
+[12/Dec/2019 14:10:26] "GET / HTTP/1.1" 200 5200
+[12/Dec/2019 14:10:26] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 77
+[12/Dec/2019 14:10:26] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 77
+[12/Dec/2019 14:10:26] "GET /static/rest_framework/css/default.css HTTP/1.1" 404 77
+[12/Dec/2019 14:10:26] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 77
+[12/Dec/2019 14:10:26] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 404 77
+[12/Dec/2019 14:10:26] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 77
+[12/Dec/2019 14:10:26] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 77
+[12/Dec/2019 14:10:26] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 77
+[12/Dec/2019 14:10:26] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 77
+[12/Dec/2019 14:10:26] "GET /static/rest_framework/js/default.js HTTP/1.1" 404 77
+[12/Dec/2019 14:10:26] "GET /favicon.ico HTTP/1.1" 404 77
+[12/Dec/2019 14:16:41] "GET /api-auth/login/?next=/ HTTP/1.1" 200 2701
+[12/Dec/2019 14:16:41] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 77
+[12/Dec/2019 14:16:41] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 77
+[12/Dec/2019 14:16:41] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 77
+[12/Dec/2019 14:16:41] "GET /static/rest_framework/css/default.css HTTP/1.1" 404 77
+[12/Dec/2019 14:16:42] "GET / HTTP/1.1" 200 5200
+[12/Dec/2019 14:16:45] "GET /?format=json HTTP/1.1" 200 24
+[12/Dec/2019 14:16:49] "GET /?format=api HTTP/1.1" 200 5244
+[12/Dec/2019 14:16:49] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 77
+[12/Dec/2019 14:16:49] "GET /static/rest_framework/css/default.css HTTP/1.1" 404 77
+[12/Dec/2019 14:16:49] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 77
+[12/Dec/2019 14:16:49] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 77
+[12/Dec/2019 14:16:49] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 404 77
+[12/Dec/2019 14:16:49] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 77
+[12/Dec/2019 14:16:49] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 77
+[12/Dec/2019 14:16:49] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 77
+[12/Dec/2019 14:16:49] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 77
+[12/Dec/2019 14:16:49] "GET /static/rest_framework/js/default.js HTTP/1.1" 404 77
+[12/Dec/2019 14:16:49] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 77
+[12/Dec/2019 14:16:49] "GET /static/rest_framework/js/default.js HTTP/1.1" 404 77
+[12/Dec/2019 14:16:51] "GET /?format=json HTTP/1.1" 200 24
+[12/Dec/2019 14:16:54] "GET /?format=json HTTP/1.1" 200 24
+[12/Dec/2019 14:17:08] "GET /? HTTP/1.1" 200 5200
+[12/Dec/2019 14:17:08] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 404 77
+[12/Dec/2019 14:17:08] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 404 77
+[12/Dec/2019 14:17:08] "GET /static/rest_framework/css/default.css HTTP/1.1" 404 77
+[12/Dec/2019 14:17:08] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 404 77
+[12/Dec/2019 14:17:08] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 404 77
+[12/Dec/2019 14:17:08] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 77
+[12/Dec/2019 14:17:08] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 77
+[12/Dec/2019 14:17:08] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 77
+[12/Dec/2019 14:17:08] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 77
+[12/Dec/2019 14:17:08] "GET /static/rest_framework/js/default.js HTTP/1.1" 404 77
+[12/Dec/2019 14:17:08] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 404 77
+[12/Dec/2019 14:17:08] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 404 77
+[12/Dec/2019 14:17:09] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 404 77
+[12/Dec/2019 14:17:09] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 404 77
+[12/Dec/2019 14:17:09] "GET /static/rest_framework/js/default.js HTTP/1.1" 404 77
+[13/Dec/2019 01:08:12] code 400, message Bad request version ('À\x14À')
+[13/Dec/2019 01:08:12] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[13/Dec/2019 01:08:12] "GET /api/v1/targets HTTP/1.1" 404 77
+[13/Dec/2019 01:08:12] "GET /api/v1/targets HTTP/1.1" 404 77
+[13/Dec/2019 01:08:12] "GET /api/v1/label/version/values HTTP/1.1" 404 77
+[13/Dec/2019 01:08:12] "GET /api/v1/label/version/values HTTP/1.1" 404 77
+[13/Dec/2019 01:08:12] "GET /api/v1/label/goversion/values HTTP/1.1" 404 77
+[13/Dec/2019 01:08:13] "GET /api/v1/label/goversion/values HTTP/1.1" 404 77
+[13/Dec/2019 01:08:13] "GET /api/v1/query?query=prometheus_build_info HTTP/1.1" 404 77
+[13/Dec/2019 01:08:13] "GET /api/v1/query?query=prometheus_build_info HTTP/1.1" 404 77
+[13/Dec/2019 01:08:13] "GET /api/v1/labels HTTP/1.1" 404 77
+[13/Dec/2019 01:08:13] "GET /api/v1/labels HTTP/1.1" 404 77
+[13/Dec/2019 01:08:13] "GET /api/v1/label/__name__/values HTTP/1.1" 404 77
+[13/Dec/2019 01:08:13] "GET /api/v1/label/__name__/values HTTP/1.1" 404 77
+[13/Dec/2019 03:38:24] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[13/Dec/2019 03:38:25] "GET /favicon.ico HTTP/1.1" 404 77
+Watching for file changes with StatReloader
+/var/www/html/myproject/myapp/models.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 17, 2019 - 15:39:23
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/var/www/html/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 18, 2019 - 06:22:04
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+[19/Dec/2019 11:58:08] "GET / HTTP/1.1" 404 3484
+[19/Dec/2019 11:58:09] code 400, message Bad request syntax ('serverstatus')
+[19/Dec/2019 11:58:09] "serverstatus" 400 -
+[19/Dec/2019 12:40:12] "GET /admin/ HTTP/1.1" 200 7804
+Not Found: /favicon.ico
+[19/Dec/2019 12:40:14] "GET /favicon.ico HTTP/1.1" 404 3535
+[19/Dec/2019 23:03:11] code 400, message Bad request version ('À\x14À')
+[19/Dec/2019 23:03:11] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+Not Found: /api/v1/targets
+[19/Dec/2019 23:03:11] "GET /api/v1/targets HTTP/1.1" 404 3544
+Not Found: /api/v1/targets
+[19/Dec/2019 23:03:11] "GET /api/v1/targets HTTP/1.1" 404 3544
+Not Found: /api/v1/label/version/values
+[19/Dec/2019 23:03:11] "GET /api/v1/label/version/values HTTP/1.1" 404 3583
+Not Found: /api/v1/label/version/values
+[19/Dec/2019 23:03:11] "GET /api/v1/label/version/values HTTP/1.1" 404 3583
+Not Found: /api/v1/label/goversion/values
+[19/Dec/2019 23:03:11] "GET /api/v1/label/goversion/values HTTP/1.1" 404 3589
+Not Found: /api/v1/label/goversion/values
+[19/Dec/2019 23:03:11] "GET /api/v1/label/goversion/values HTTP/1.1" 404 3589
+Not Found: /api/v1/query
+[19/Dec/2019 23:03:11] "GET /api/v1/query?query=prometheus_build_info HTTP/1.1" 404 3566
+Not Found: /api/v1/query
+[19/Dec/2019 23:03:11] "GET /api/v1/query?query=prometheus_build_info HTTP/1.1" 404 3566
+Not Found: /api/v1/labels
+[19/Dec/2019 23:03:11] "GET /api/v1/labels HTTP/1.1" 404 3541
+Not Found: /api/v1/labels
+[19/Dec/2019 23:03:11] "GET /api/v1/labels HTTP/1.1" 404 3541
+Not Found: /api/v1/label/__name__/values
+[19/Dec/2019 23:03:11] "GET /api/v1/label/__name__/values HTTP/1.1" 404 3586
+Not Found: /api/v1/label/__name__/values
+[19/Dec/2019 23:03:11] "GET /api/v1/label/__name__/values HTTP/1.1" 404 3586
+[20/Dec/2019 02:12:46] code 400, message Bad request syntax ('\x05\x02\x00\x02')
+[20/Dec/2019 02:12:46] " " 400 -
+[20/Dec/2019 02:12:46] code 400, message Bad request syntax ('\x05\x02\x00\x02')
+[20/Dec/2019 02:12:46] " " 400 -
+Not Found: /
+[20/Dec/2019 04:16:18] "GET / HTTP/1.1" 404 3484
+[20/Dec/2019 06:19:19] "GET /qa_info/?category_id=3&&answer_id=&&person_id=8 HTTP/1.1" 200 10621
+[20/Dec/2019 06:19:20] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+Not Found: /favicon.ico
+[20/Dec/2019 06:19:20] "GET /favicon.ico HTTP/1.1" 404 3535
+[20/Dec/2019 10:26:54] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[20/Dec/2019 10:26:54] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[20/Dec/2019 10:26:54] "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[20/Dec/2019 10:26:54] "GET /static/rest_framework/css/bootstrap.min.css.map HTTP/1.1" 404 1748
+/var/www/html/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 19, 2019 - 11:31:51
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/urls/resolvers.py", line 584, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/urls/resolvers.py", line 577, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/html/myproject/myproject/urls.py", line 4, in <module>
+    from myapp.views import *
+  File "/var/www/html/myproject/myapp/views.py", line 465
+    return Response({'
+                     ^
+SyntaxError: EOL while scanning string literal
+
+/var/www/html/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+[20/Dec/2019 12:45:30] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[20/Dec/2019 12:45:30] "  /*à     Cookie: mstshash=Administr" 400 -
+[21/Dec/2019 00:09:51] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[21/Dec/2019 00:09:51] "  /*à     Cookie: mstshash=Administr" 400 -
+Not Found: /
+[21/Dec/2019 00:57:21] "GET / HTTP/1.1" 404 3479
+Not Found: /favicon.ico
+[21/Dec/2019 00:57:22] "GET /favicon.ico HTTP/1.1" 404 3535
+[21/Dec/2019 01:18:22] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[21/Dec/2019 01:18:22] "  /*à     Cookie: mstshash=Administr" 400 -
+Not Found: /
+[21/Dec/2019 07:45:39] "GET / HTTP/1.1" 404 3479
+Not Found: /favicon.ico
+[21/Dec/2019 07:45:40] "GET /favicon.ico HTTP/1.1" 404 3535
+Not Found: /
+[21/Dec/2019 07:46:12] "GET / HTTP/1.1" 404 3484
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 169, in handle
+    self.handle_one_request()
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Not Found: /
+[21/Dec/2019 18:27:26] "GET / HTTP/1.0" 404 3500
+Not Found: /manager/html
+[22/Dec/2019 09:00:19] "GET /manager/html HTTP/1.1" 404 3538
+Not Found: /favicon.ico
+[23/Dec/2019 03:31:49] "GET /favicon.ico HTTP/1.1" 404 3535
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 169, in handle
+    self.handle_one_request()
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Not Found: /
+[23/Dec/2019 17:37:36] "GET / HTTP/1.1" 404 3484
+Not Found: /favicon.ico
+[23/Dec/2019 21:54:06] "HEAD /favicon.ico HTTP/1.1" 404 3536
+Watching for file changes with StatReloader
+[24/Dec/2019 22:46:50] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[24/Dec/2019 22:46:50] "  /*à     Cookie: mstshash=Administr" 400 -
+[24/Dec/2019 23:00:13] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[24/Dec/2019 23:00:13] "  /*à     Cookie: mstshash=Administr" 400 -
+[24/Dec/2019 23:10:09] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[24/Dec/2019 23:10:09] "  /*à     Cookie: mstshash=Administr" 400 -
+Watching for file changes with StatReloader
+[27/Dec/2019 14:28:39] "GET /card_content/?category_id=15 HTTP/1.1" 200 49
+[27/Dec/2019 14:29:13] "GET /category_info/?set_id= HTTP/1.1" 200 460
+[27/Dec/2019 14:29:14] "GET /folder_info/?user_id= HTTP/1.1" 200 637
+[27/Dec/2019 14:29:18] "GET /set_info/?folder_id=6 HTTP/1.1" 200 235
+[27/Dec/2019 14:29:30] "GET /set_info/?folder_id=6 HTTP/1.1" 200 235
+[27/Dec/2019 14:29:57] "GET /folder_info/?user_id= HTTP/1.1" 200 637
+[27/Dec/2019 14:29:57] "GET /category_info/?set_id= HTTP/1.1" 200 460
+[27/Dec/2019 14:30:01] "GET /folder_info/?user_id= HTTP/1.1" 200 637
+[27/Dec/2019 14:30:01] "GET /set_info/?folder_id= HTTP/1.1" 200 810
+[27/Dec/2019 14:31:18] "GET /folder_info/?user_id= HTTP/1.1" 200 637
+[27/Dec/2019 14:31:18] "GET /set_info/?folder_id= HTTP/1.1" 200 810
+[27/Dec/2019 14:31:29] "GET /folder_info/?user_id= HTTP/1.1" 200 637
+[27/Dec/2019 14:31:29] "GET /set_info/?folder_id= HTTP/1.1" 200 810
+[27/Dec/2019 14:31:44] "GET /folder_info/?user_id= HTTP/1.1" 200 637
+Not Found: /
+[27/Dec/2019 15:07:35] "GET / HTTP/1.1" 404 3640
+[27/Dec/2019 15:52:54] code 400, message Bad request syntax ('\x05\x02\x00\x02')
+[27/Dec/2019 15:52:54] " " 400 -
+[27/Dec/2019 15:52:54] code 400, message Bad request syntax ('\x05\x02\x00\x02')
+[27/Dec/2019 15:52:54] " " 400 -
+[27/Dec/2019 16:19:31] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[27/Dec/2019 16:19:31] "  /*à     Cookie: mstshash=Administr" 400 -
+Not Found: /
+[27/Dec/2019 16:37:02] "GET / HTTP/1.1" 404 3624
+Not Found: /
+[27/Dec/2019 23:13:06] "GET / HTTP/1.1" 404 3640
+Not Found: /
+[28/Dec/2019 05:16:38] "GET / HTTP/1.1" 404 3640
+[29/Dec/2019 05:16:59] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[29/Dec/2019 05:16:59] "  /*à     Cookie: mstshash=Administr" 400 -
+Not Found: /
+[29/Dec/2019 06:04:57] "GET / HTTP/1.1" 404 3640
+[29/Dec/2019 08:24:58] code 400, message Bad request syntax ('serverstatus')
+[29/Dec/2019 08:24:58] "serverstatus" 400 -
+Not Found: /
+[29/Dec/2019 08:24:58] "GET / HTTP/1.1" 404 3624
+Not Found: /
+[29/Dec/2019 17:24:15] "GET / HTTP/1.1" 404 3640
+Not Found: /
+[29/Dec/2019 17:24:17] "GET / HTTP/1.1" 404 3640
+Not Found: /
+[29/Dec/2019 17:24:21] "GET / HTTP/1.1" 404 3640
+Not Found: /
+[29/Dec/2019 17:24:30] "GET / HTTP/1.1" 404 3640
+Not Found: /
+[29/Dec/2019 17:24:45] "GET / HTTP/1.1" 404 3640
+[30/Dec/2019 02:15:28] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+[30/Dec/2019 02:15:28] "  +&à     Cookie: mstshash=hello" 400 -
+Not Found: /favicon.ico
+[30/Dec/2019 03:34:25] "GET /favicon.ico HTTP/1.1" 404 3675
+[30/Dec/2019 03:43:32] "GET /admin/myapp/cardcontent/add/ HTTP/1.1" 200 6240
+Not Found: /favicon.ico
+[30/Dec/2019 03:43:33] "GET /favicon.ico HTTP/1.1" 404 3675
+[30/Dec/2019 05:02:18] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+[30/Dec/2019 05:02:18] "  +&à     Cookie: mstshash=hello" 400 -
+[30/Dec/2019 08:00:28] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+[30/Dec/2019 08:00:28] "  +&à     Cookie: mstshash=hello" 400 -
+[31/Dec/2019 07:28:35] "GET /admin/myapp/cardcontent/add/ HTTP/1.1" 200 6240
+[31/Dec/2019 07:28:40] "GET /admin/myapp/cardcontent/add/ HTTP/1.1" 200 6240
+[31/Dec/2019 07:28:40] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[31/Dec/2019 07:28:40] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[31/Dec/2019 07:28:40] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[31/Dec/2019 07:28:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[31/Dec/2019 07:28:40] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[31/Dec/2019 07:28:40] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[31/Dec/2019 07:28:41] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[31/Dec/2019 07:28:41] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[31/Dec/2019 07:28:41] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[31/Dec/2019 07:28:41] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[31/Dec/2019 07:28:41] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[31/Dec/2019 07:28:41] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[31/Dec/2019 07:28:41] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[31/Dec/2019 07:28:41] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[31/Dec/2019 07:28:42] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[31/Dec/2019 07:28:42] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[31/Dec/2019 07:28:42] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[31/Dec/2019 07:28:42] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[31/Dec/2019 07:28:42] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[31/Dec/2019 07:28:42] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[31/Dec/2019 07:28:42] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+/var/www/html/myproject/myproject/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 27, 2019 - 14:28:35
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+all set obj :  <QuerySet [<SetTable: google>, <SetTable: test2>]>
+all set obj :  <QuerySet [<SetTable: google>, <SetTable: test2>]>
+Watching for file changes with StatReloader
+/var/www/html/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 31, 2019 - 07:30:36
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/urls/resolvers.py", line 584, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/urls/resolvers.py", line 577, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/html/myproject/myproject/urls.py", line 4, in <module>
+    from myapp.views import *
+  File "/var/www/html/myproject/myapp/views.py", line 460
+    return Response({'code' : 200, 'message' : 'Suc
+                                                  ^
+SyntaxError: EOL while scanning string literal
+
+/var/www/html/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/checks/urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/checks/urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/urls/resolvers.py", line 584, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/urls/resolvers.py", line 577, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/var/www/html/myproject/myproject/urls.py", line 16, in <module>
+    path('login/',Login.as_view(),name='login'),
+NameError: name 'Login' is not defined
+
+/var/www/html/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Not Found: /
+[31/Dec/2019 11:01:07] "GET / HTTP/1.1" 404 3624
+[31/Dec/2019 13:47:35] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[31/Dec/2019 13:47:35] "  /*à     Cookie: mstshash=Administr" 400 -
+Not Found: /weborg/
+[01/Jan/2020 05:05:51] "GET /weborg/ HTTP/1.1" 404 3663
+Not Found: /
+[01/Jan/2020 10:40:33] "GET / HTTP/1.1" 404 3640
+Not Found: /
+[01/Jan/2020 11:20:06] "GET / HTTP/1.1" 404 3640
+Not Found: /
+[01/Jan/2020 15:46:21] "GET / HTTP/1.1" 404 3640
+[01/Jan/2020 17:18:46] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[01/Jan/2020 17:18:46] "  /*à     Cookie: mstshash=Administr" 400 -
+[02/Jan/2020 03:24:40] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[02/Jan/2020 03:24:40] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+Not Found: /favicon.ico
+[02/Jan/2020 03:24:41] "GET /favicon.ico HTTP/1.1" 404 3675
+Watching for file changes with StatReloader
+Not Found: /setup/index.jsp
+[03/Jan/2020 09:55:16] "GET /setup/index.jsp HTTP/1.1" 404 3947
+Not Found: /
+[03/Jan/2020 10:28:01] "GET / HTTP/1.1" 404 3900
+Not Found: /ip.ws.126.net:443
+[03/Jan/2020 20:37:27] "CONNECT ip.ws.126.net:443 HTTP/1.1" 404 1666
+Not Found: /
+[04/Jan/2020 07:53:24] "GET / HTTP/1.1" 404 3900
+Not Found: /ip.ws.126.net:443
+[04/Jan/2020 16:59:22] "CONNECT ip.ws.126.net:443 HTTP/1.1" 404 1666
+Not Found: /http:/123.125.114.144/
+[04/Jan/2020 17:01:54] "HEAD http://123.125.114.144/ HTTP/1.1" 404 1678
+Not Found: /
+[05/Jan/2020 02:47:42] "GET / HTTP/1.1" 404 3900
+Not Found: /
+[05/Jan/2020 06:21:21] "GET / HTTP/1.1" 404 3900
+[05/Jan/2020 09:21:51] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00+&à\x00\x00\x00\x00\x00Cookie:')
+[05/Jan/2020 09:21:51] "  +&à     Cookie: mstshash=hello" 400 -
+Not Found: /
+[05/Jan/2020 17:42:42] "GET / HTTP/1.1" 404 3884
+[06/Jan/2020 03:42:02] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+[06/Jan/2020 03:42:03] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+Not Found: /favicon.ico
+[06/Jan/2020 03:42:03] "GET /favicon.ico HTTP/1.1" 404 3935
+/var/www/html/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 03, 2020 - 04:40:58
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/var/www/html/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 06, 2020 - 09:16:17
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/var/www/html/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 07, 2020 - 14:03:28
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 169, in handle
+    self.handle_one_request()
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[08/Jan/2020 06:13:21] "GET /admin HTTP/1.1" 301 0
+[08/Jan/2020 06:13:21] "GET /admin/ HTTP/1.1" 302 0
+[08/Jan/2020 06:13:22] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[08/Jan/2020 06:13:22] "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+[08/Jan/2020 06:13:22] "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+[08/Jan/2020 06:13:22] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+[08/Jan/2020 06:13:23] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[08/Jan/2020 06:13:23] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[08/Jan/2020 06:13:23] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Not Found: /favicon.ico
+[08/Jan/2020 06:13:23] "GET /favicon.ico HTTP/1.1" 404 3931
+[08/Jan/2020 06:13:38] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[08/Jan/2020 06:13:39] "GET /admin/ HTTP/1.1" 200 9293
+[08/Jan/2020 06:13:39] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[08/Jan/2020 06:13:39] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[08/Jan/2020 06:13:39] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[08/Jan/2020 06:13:40] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[08/Jan/2020 06:13:40] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[08/Jan/2020 06:19:15] "GET /admin/ HTTP/1.1" 200 9293
+[08/Jan/2020 06:21:04] "GET /admin/ HTTP/1.1" 200 9293
+/var/www/html/myproject/myproject/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 07, 2020 - 14:32:59
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+----------------------------------------
+Exception happened during processing of request from ('104.152.52.22', 41674)
+----------------------------------------
+Watching for file changes with StatReloader
+[08/Jan/2020 06:23:22] "GET / HTTP/1.1" 200 9095
+/var/www/html/myproject/myproject/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 08, 2020 - 06:23:09
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[08/Jan/2020 06:23:50] "GET /admin/ HTTP/1.1" 200 9293
+/var/www/html/myproject/myproject/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 08, 2020 - 06:23:36
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[08/Jan/2020 06:27:00] "GET /admin/ HTTP/1.1" 200 9293
+[08/Jan/2020 06:27:01] "GET /admin/ HTTP/1.1" 200 9293
+/var/www/html/myproject/myproject/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 08, 2020 - 06:26:55
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/management/__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/management/__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/management/base.py", line 323, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 60, in execute
+    super().execute(*args, **options)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/management/base.py", line 364, in execute
+    output = self.handle(*args, **options)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 67, in handle
+    if not settings.DEBUG and not settings.ALLOWED_HOSTS:
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/conf/__init__.py", line 79, in __getattr__
+    self._setup(name)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/conf/__init__.py", line 66, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/conf/__init__.py", line 176, in __init__
+    raise ImproperlyConfigured("The SECRET_KEY setting must not be empty.")
+django.core.exceptions.ImproperlyConfigured: The SECRET_KEY setting must not be empty.
+Watching for file changes with StatReloader
+[08/Jan/2020 06:32:42] "GET /admin/ HTTP/1.1" 302 0
+[08/Jan/2020 06:32:43] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[08/Jan/2020 06:32:43] "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+[08/Jan/2020 06:32:43] "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+[08/Jan/2020 06:32:43] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+[08/Jan/2020 06:32:44] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+Not Found: /favicon.ico
+[08/Jan/2020 06:32:44] "GET /favicon.ico HTTP/1.1" 404 3931
+[08/Jan/2020 06:32:44] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[08/Jan/2020 06:32:44] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[08/Jan/2020 06:32:55] "GET /admin/ HTTP/1.1" 200 9293
+Not Found: /favicon.ico
+[08/Jan/2020 06:32:56] "GET /favicon.ico HTTP/1.1" 404 3931
+[08/Jan/2020 06:32:57] "GET /admin/ HTTP/1.1" 200 9293
+[08/Jan/2020 06:32:57] "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+[08/Jan/2020 06:32:58] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+[08/Jan/2020 06:32:58] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[08/Jan/2020 06:32:58] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[08/Jan/2020 06:32:59] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[08/Jan/2020 06:32:59] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+Not Found: /favicon.ico
+[08/Jan/2020 06:32:59] "GET /favicon.ico HTTP/1.1" 404 3931
+[08/Jan/2020 06:32:59] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[08/Jan/2020 06:32:59] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[08/Jan/2020 06:32:59] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[08/Jan/2020 06:32:59] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[08/Jan/2020 06:33:25] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03R\x94\x14$¯IÉßÚ¸P|\x9eeWÑ-\x02\x96X\x03\xa0\x08\x1a\x04úÊ\x12\x95¢9i õÞ¦óDk\x93x"?\xadE¿\x1f\x1a\x0e;R\x0eM')
+[08/Jan/2020 06:33:25] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[08/Jan/2020 06:33:25] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x039+qN{\x93NþüH\x1a¿\x85+Á~Í»\x83³Z\x96÷-\x11HË\x03\x1d\x08\x91\x91 óZ»U\x0e¦óå^ð\x12\x06ª¿\x9aþ\x94¸þo\x8cmÎi3\x052\x8a¡¿\x81[\x00"ºº\x13\x03\x13\x01\x13\x02Ì©Ì¨À+À/À,À0À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+[08/Jan/2020 06:33:25] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[08/Jan/2020 06:33:39] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x19\x1c3\x01\x88%\x90»;\x95(Q¾\x9bRi«D¶ù\x10\x00Ó\x0f\x1fM¬\x1f\râ\x11$ \x19\x03\xadèÆö\x01È\x01Z\x18¿G×Ôjþidòþæ\x85Õ\x8eòYÚg\x92\x8e\x95\x00"êê\x13\x03\x13\x01\x13\x02Ì©Ì¨À+À/À,À0À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x00')
+[08/Jan/2020 06:33:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[08/Jan/2020 06:33:39] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x91ÔT¿³nOÙ×\x12ì]0ïsvÏ\x81zÚa'w8p(Õ\x8bçIY")
+[08/Jan/2020 06:33:39] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+Watching for file changes with StatReloader
+Not Found: /ip.ws.126.net:443
+[15/Jan/2020 21:23:50] "CONNECT ip.ws.126.net:443 HTTP/1.1" 404 1666
+Not Found: /favicon.ico
+[16/Jan/2020 01:04:00] "HEAD /favicon.ico HTTP/1.1" 404 3936
+Not Found: /logs
+[16/Jan/2020 04:21:25] "GET /logs HTTP/1.0" 404 3914
+/var/www/html/myproject/myapp/admin_api.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 15, 2020 - 14:17:36
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[16/Jan/2020 14:21:17] "GET /media/q2t/q_15791835475249355.mp3 HTTP/1.1" 304 0
+[16/Jan/2020 14:21:24] "POST /check_accuracy/ HTTP/1.1" 200 173
+[16/Jan/2020 14:21:24] "GET /media/q2t/a_15791835475249355.mp3 HTTP/1.1" 200 6048
+Not Found: /ip.ws.126.net:443
+[16/Jan/2020 17:53:36] "CONNECT ip.ws.126.net:443 HTTP/1.1" 404 1666
+Not Found: /http:/123.125.114.144/
+[16/Jan/2020 18:03:31] "HEAD http://123.125.114.144/ HTTP/1.1" 404 1678
+Not Found: /
+[17/Jan/2020 03:35:24] "GET / HTTP/1.1" 404 3900
+[17/Jan/2020 03:41:30] code 400, message Bad request syntax ('\x16\x03\x01\x00u\x01\x00\x00q\x03\x03\x03\x93n%~*\x80MÓ\x0cTêø\x0cäM\x05ôm\x93©ØcJ\x8cRf]~·\x9c\xad\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\tÀ\x14À')
+[17/Jan/2020 03:41:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+Not Found: /api/v1/targets
+[17/Jan/2020 03:41:30] "GET /api/v1/targets HTTP/1.1" 404 3944
+Not Found: /api/v1/targets
+[17/Jan/2020 03:41:30] "GET /api/v1/targets HTTP/1.1" 404 3944
+Not Found: /api/v1/label/version/values
+[17/Jan/2020 03:41:31] "GET /api/v1/label/version/values HTTP/1.1" 404 3983
+Not Found: /api/v1/label/version/values
+[17/Jan/2020 03:41:31] "GET /api/v1/label/version/values HTTP/1.1" 404 3983
+Not Found: /api/v1/label/goversion/values
+[17/Jan/2020 03:41:31] "GET /api/v1/label/goversion/values HTTP/1.1" 404 3989
+Not Found: /api/v1/label/goversion/values
+[17/Jan/2020 03:41:31] "GET /api/v1/label/goversion/values HTTP/1.1" 404 3989
+Not Found: /api/v1/query
+[17/Jan/2020 03:41:31] "GET /api/v1/query?query=prometheus_build_info HTTP/1.1" 404 3966
+Not Found: /api/v1/query
+[17/Jan/2020 03:41:31] "GET /api/v1/query?query=prometheus_build_info HTTP/1.1" 404 3966
+Not Found: /api/v1/labels
+[17/Jan/2020 03:41:31] "GET /api/v1/labels HTTP/1.1" 404 3941
+Not Found: /api/v1/labels
+[17/Jan/2020 03:41:31] "GET /api/v1/labels HTTP/1.1" 404 3941
+Not Found: /api/v1/label/__name__/values
+[17/Jan/2020 03:41:31] "GET /api/v1/label/__name__/values HTTP/1.1" 404 3986
+Not Found: /api/v1/label/__name__/values
+[17/Jan/2020 03:41:31] "GET /api/v1/label/__name__/values HTTP/1.1" 404 3986
+Not Found: /logs
+[17/Jan/2020 04:23:26] "GET /logs HTTP/1.0" 404 3914
+Not Found: /
+[17/Jan/2020 06:21:24] "GET / HTTP/1.1" 404 3900
+Watching for file changes with StatReloader
+Not Found: /
+[21/Jan/2020 18:55:00] "GET / HTTP/1.1" 404 3884
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/var/www/html/venv/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Not Found: /ip.ws.126.net:443
+[21/Jan/2020 22:21:50] "CONNECT ip.ws.126.net:443 HTTP/1.1" 404 1666
+Not Found: /logs
+[22/Jan/2020 04:18:23] "GET /logs HTTP/1.0" 404 3914
+/var/www/html/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 21, 2020 - 15:14:10
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+----------------------------------------
+Exception happened during processing of request from ('198.108.67.48', 58100)
+----------------------------------------
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[22/Jan/2020 06:39:46] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[22/Jan/2020 06:39:46] "  /*à     Cookie: mstshash=Administr" 400 -
+Not Found: /
+[22/Jan/2020 07:12:16] "GET / HTTP/1.1" 404 3884
+[22/Jan/2020 09:48:52] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[22/Jan/2020 09:48:52] "  /*à     Cookie: mstshash=Administr" 400 -
+[22/Jan/2020 10:45:56] "GET /admin/authtoken/token/ HTTP/1.1" 200 25565
+[22/Jan/2020 10:45:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[22/Jan/2020 10:45:57] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[22/Jan/2020 10:45:58] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 271817
+[22/Jan/2020 10:45:59] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[22/Jan/2020 10:46:02] "GET /admin/authtoken/token/5493191dd84f4355cd17932019b26971d72e13bc/change/ HTTP/1.1" 200 7428
+[22/Jan/2020 10:46:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[22/Jan/2020 10:46:03] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[22/Jan/2020 10:46:13] "GET /admin/authtoken/token/ HTTP/1.1" 200 25565
+/var/www/html/myproject/myapp/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 22, 2020 - 06:20:33
+Django version 2.2.7, using settings 'myproject.settings'
+Starting development server at http://0:9090/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
